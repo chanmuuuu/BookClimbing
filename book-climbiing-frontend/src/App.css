@@ -1,0 +1,127 @@
+/* 全体のスタイル */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* フォーム入力エリア */
+.book-form input {
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+/* エラーメッセージ */
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+/* 本の検索結果 */
+.search-results {
+  position: absolute;  /* 絶対位置に設定 */
+  right: 450px;         /* 右側に20pxの余白を設定 */
+  top: 75px;          /* 検索ボックスの下に配置 */
+  width: 300px;        /* 適切な幅を設定 */
+  background-color: white;  /* 背景を白に設定 */
+  border: 1px solid #ccc;    /* 境界線を設定 */
+  border-radius: 8px;        /* 角を丸くする */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 影を追加 */
+  max-height: 400px;         /* 最大高さを設定 */
+  overflow-y: auto;          /* 縦スクロールを可能に */
+  z-index: 1000;             /* 富士山画像より前に表示されるように */
+}
+
+.search-results li {
+  padding: 10px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.search-results li:hover {
+  background-color: #f0f0f0;  /* ホバー時の背景色を変更 */
+}
+
+
+.search-results img {
+  width: 40px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+/* 登山者アイコンと進捗 */
+.mountain-container {
+  position: relative;
+  height: 400px;
+  width: 800px;
+  margin: 0 auto;
+  background-color: #e0e0e0;
+  background-image: url('/Users/kitamuramakoto/dev/BookClimbing/book-climbiing-frontend/public/fujisan.png'); /* 山の画像を指定 */
+  background-size: cover;
+  background-position: bottom;
+  border: 2px solid #ccc;
+}
+
+.mountain {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.climber {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 32px;
+}
+
+/* 本のリスト */
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* カード間のスペースを調整 */
+  width: 70%; /* 画面の70%の幅で表示 */
+  margin: 0 auto; /* 中央に配置 */
+  justify-content: flex-start; /* 左詰めで表示 */
+}
+
+/* 本のカード */
+.book-card {
+  position: relative;
+  width: calc(18% - 20px); /* 元のサイズより約10%小さく調整 */
+  height: auto;
+  aspect-ratio: 2 / 3; /* 2:3 の比率を維持 */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* カードの影 */
+  border-radius: 8px; /* カードの角を丸く */
+  overflow: hidden; /* カードのはみ出しを隠す */
+  background-color: #fff;
+}
+
+/* 本の画像 */
+.book-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* 画像をカードに合わせて表示 */
+}
+
+
+/* 削除ボタン */
+.remove-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+}
