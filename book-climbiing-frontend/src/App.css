@@ -54,16 +54,21 @@
 }
 
 /* 登山者アイコンと進捗 */
+.climber-image {
+  width: 50px; /* 画像のサイズを調整 */
+  left: 350px;
+  bottom: 30px;
+  position: absolute;
+}
+
 .mountain-container {
   position: relative;
   height: 400px;
   width: 800px;
   margin: 0 auto;
-  background-color: #e0e0e0;
-  background-image: url('/Users/kitamuramakoto/dev/BookClimbing/book-climbiing-frontend/public/fujisan.png'); /* 山の画像を指定 */
+  background-image: url('../public/images/fujisan.png'); /* 富士山の背景画像を設定 */
   background-size: cover;
   background-position: bottom;
-  border: 2px solid #ccc;
 }
 
 .mountain {
@@ -74,9 +79,7 @@
 
 .climber {
   position: absolute;
-  left: 50%;
   transform: translateX(-50%);
-  font-size: 32px;
 }
 
 /* 本のリスト */

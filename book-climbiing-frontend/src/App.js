@@ -128,12 +128,13 @@ function BookClimbing() {
         <div className="mountain">
           <div
             className="climber"
-            style={{ bottom: `${progress}%` }}
+            style={{ bottom: `${progress}%`, left: `${50 - progress / 2}%` }}  // 左右移動も追加
           >
-            🧘
+            <img src="./images/climber.png" alt="Climber" className="climber-image" />
           </div>
         </div>
       </div>
+
 
       <h3>読んだ本のリスト</h3>
       {books.length > 0 ? (
