@@ -55,9 +55,9 @@
 
 /* 登山者アイコンと進捗 */
 .climber-image {
-  width: 50px; /* 画像のサイズを調整 */
-  left: 350px;
-  bottom: 30px;
+  width: 50px;
+  left: 150px;
+  bottom: -10px;
   position: absolute;
 }
 
@@ -77,9 +77,16 @@
   height: 100%;
 }
 
+.climbing-space{
+  position: absolute;
+  width: 350px;
+  height: 330px;
+  margin-top: 3%;
+  margin-left: 44%;
+}
+
 .climber {
   position: absolute;
-  transform: translateX(-50%);
 }
 
 /* 本のリスト */
