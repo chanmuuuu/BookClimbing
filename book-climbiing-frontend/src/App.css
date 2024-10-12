@@ -4,15 +4,52 @@
   font-family: Arial, sans-serif;
 }
 
+.navbar-title{
+  font-size: 24px;  /* フォントサイズを大きく */
+  color: white;  /* 文字色を白に設定 */
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0;  /* 余白をなくす */
+  flex-grow: 1;  /* タイトルを中央に配置するために拡張 */
+  text-align: center;  /* 中央揃え */
+  margin-left: 100px;
+}
+
 /* フォーム入力エリア */
-.book-form input {
+/* .book-form input {
   padding: 10px;
   margin: 10px;
   width: 300px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 4px;
+} */
+
+/* メニューバーのスタイル */
+.navbar {
+  background-color: #a3c0d2 ; /* 青色の背景 */
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
 }
+
+.navbar-icon {
+  height: 80px;
+  margin-top: 10px;
+}
+
+.search-bar {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  width: 250px;
+}
+
 
 
 /* エラーメッセージ */
@@ -23,17 +60,17 @@
 
 /* 本の検索結果 */
 .search-results {
-  position: absolute;  /* 絶対位置に設定 */
-  right: 450px;         /* 右側に20pxの余白を設定 */
-  top: 75px;          /* 検索ボックスの下に配置 */
-  width: 300px;        /* 適切な幅を設定 */
-  background-color: white;  /* 背景を白に設定 */
-  border: 1px solid #ccc;    /* 境界線を設定 */
-  border-radius: 8px;        /* 角を丸くする */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 影を追加 */
-  max-height: 400px;         /* 最大高さを設定 */
-  overflow-y: auto;          /* 縦スクロールを可能に */
-  z-index: 1000;             /* 富士山画像より前に表示されるように */
+  position: absolute;
+  right: 10px;
+  top: 50px;
+  width: 300px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 1000;
 }
 
 .search-results li {
@@ -43,7 +80,7 @@
 }
 
 .search-results li:hover {
-  background-color: #f0f0f0;  /* ホバー時の背景色を変更 */
+  background-color: #f0f0f0;
 }
 
 

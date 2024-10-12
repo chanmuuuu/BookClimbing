@@ -101,13 +101,15 @@ function BookClimbing() {
 
   return (
     <div className="App">
-      <h1>BookClimbing</h1>
-      <div className="book-form">
+      <div className='navbar'>
+        <img src="./images/icon.png" alt="BookClimbing Icon" className="navbar-icon" />
+        <h1 className="navbar-title">BookClimbing</h1>
         <input
           type="text"
-          placeholder="本のタイトルを入力して検索"
+          placeholder="本を検索"
           value={title}
           onChange={handleTitleChange}
+          className="search-bar"
         />
         {searchResults.length > 0 && (
           <ul className="search-results">
@@ -139,7 +141,6 @@ function BookClimbing() {
           </div>
         </div>
       </div>
-
 
       <h3>読んだ本のリスト</h3>
       {books.length > 0 ? (
